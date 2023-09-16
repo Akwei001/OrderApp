@@ -2,7 +2,8 @@ import React from 'react'
 
 const CategoryPage = () => {
   return (
-    <div>CategoryPage</div>
+    <div>CategoryPage is not working</div>
+    
   )
 }
 
