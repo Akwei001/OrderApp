@@ -1,9 +1,16 @@
+import Featured from "@/components/Featured";
+import Slider from "@/components/Slider";
+import Offer from "@/components/Offer";
+
+  
 
 
 export default function Home() {
   return (
     <main className="">
-     Hello World!
+     <Slider/>
+     <Featured/>
+     <Offer/>
     </main>
   )
 }
