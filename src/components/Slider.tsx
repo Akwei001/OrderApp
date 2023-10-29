@@ -18,18 +18,18 @@ const data = [
 {
     id: 3 ,
     title:"The best food to share with your family" ,
-    image:"/slide3.png" ,
+    image:"/slide3.jpg" ,
 },
 
 
 ]
 
 const Slider = () => {
-    const [currentSlide, setCurrentSlide] = useState(1)
+    const [currentSlide, setCurrentSlide] = useState(0)
 
     useEffect(() => {
-        const interval = setInterval(() =>{() =>setCurrentSlide(prev=>prev+1)}, 2000);
-        return () => clearInterval(interval);
+      const interval = setInterval(() =>setCurrentSlide((prev) => prev === data.length - 1 ? 0 : prev + 1), 2000);
+      return () => clearInterval(interval);
     },[])
   return (
     <div className=" flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)]">
